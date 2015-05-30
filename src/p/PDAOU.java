@@ -17,8 +17,8 @@ public class PDAOU implements Serializable{
 	private void estabcon()
 	{
 		try{
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-			con =DriverManager.getConnection("jdbc:odbc:abc","root","root");
+			Class.forName("com.mysql.jdbc.Driver");
+			con =DriverManager.getConnection("jdbc:mysql://localhost/abc","root","root");
 		
 	}catch(Exception e){ }
 	}
